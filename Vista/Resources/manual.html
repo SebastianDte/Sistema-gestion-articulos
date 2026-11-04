@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Manual de Usuario - Gestión de Artículos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #34495e;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px auto 20px auto;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        /* Para iconos al lado del texto en listas compatible con WebBrowser */
+        .inline-icon {
+            display: inline-block;
+        }
+
+            .inline-icon img {
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+        .toc a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+            .toc a:hover {
+                text-decoration: underline;
+            }
+
+        hr {
+            margin: 30px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 13px;
+            color: #555;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Bienvenido a la Aplicación de Gestión de Artículos</h1>
+        <p>Esta aplicación fue diseñada para que gestionar tus artículos, marcas y categorías sea rápido y sencillo. Podrás dar de alta, modificar o eliminar artículos, organizar marcas y categorías, y visualizar imágenes de tus productos de manera fácil. Además, cuenta con filtros inteligentes que te permitirán encontrar lo que buscas en segundos.</p>
+
+        <hr>
+
+        <!-- Tabla de contenidos -->
+        <div class="toc">
+            <h2>Contenido</h2>
+            <ul>
+                <li><a href="#introduccion">1. Introducción y Menú</a></li>
+                <li><a href="#articulos">2. Gestión de Artículos</a></li>
+                <li><a href="#marcas">3. Gestión de Marcas</a></li>
+                <li><a href="#categorias">4. Gestión de Categorías</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Introducción y menú -->
+        <h2 id="introduccion">1. Introducción y Menú</h2>
+        <p>Al abrir la aplicación, te recibe una ventana de bienvenida donde podrás ingresar tu nombre para personalizar la experiencia. Luego, podrás navegar mediante un menú tipo hamburguesa, elegante y fácil de usar, que te permitirá acceder rápidamente a las secciones principales:</p>
+
+        <img src="img/Bienvenida.png" />
+        <div class="caption">Pantalla de bienvenida</div>
+
+        <h2>Menú</h2>
+        <img src="img/Menú.png" />
+        <div class="caption">Menú tipo hamburguesa</div>
+
+        <hr>
+
+        <!-- Gestión de artículos -->
+        <h2 id="articulos">2. Gestión de Artículos</h2>
+        <p>La sección de Artículos es el corazón de la aplicación. Aquí podrás ver todos tus productos en un panel central, donde se muestra de forma clara y ordenada cada artículo con su nombre, categoría, marca y precio.</p>
+
+        <h3>Opciones por artículo</h3>
+        <p>Para cada artículo, tendrás opciones intuitivas:</p>
+        <ul>
+            <li><span class="inline-icon">Editar la información del producto.<img src="img/editBrown.png" /></span></li>
+            <li><span class="inline-icon">Eliminar artículos.<img src="img/deleteRed.png" /></span></li>
+            <li><span class="inline-icon">Ver más detalles y características del artículo.<img src="img/vermas.png" /></span></li>
+        </ul>
+
+        <img src="img/ArticulosSeccion.png" />
+        <div class="caption">Panel de artículos con opciones</div>
+
+        <p>La aplicación permite previsualizar las imágenes de cada artículo y recorrerlas fácilmente, ya sea que estén cargadas desde Internet o desde archivos locales.</p>
+
+        <h2>Búsqueda de Artículos</h2>
+        <p>El sistema cuenta con un buscador rápido y un filtro avanzado.</p>
+        <ul>
+            <li>Filtro rápido: filtra por nombre de artículo.</li>
+            <li>
+                Filtro avanzado: se activa presionando el check de Filtrar; permite filtrar por campo y criterio.<br>
+                Limpiar entradas del filtro avanzado: <span class="inline-icon"><img src="img/clear.png" /></span>
+            </li>
+        </ul>
+
+        <img src="img/checkFiltroAvanzado.png" />
+        <div class="caption">Filtro avanzado activable</div>
+
+        <img src="img/FiltroavanzadoBotonclean.png" />
+        <div class="caption">Botón para limpiar filtros</div>
+
+        <h2>Agregar Artículo</h2>
+        <p>Para agregar un artículo, haga clic en el ícono correspondiente:</p>
+        <ul>
+            <li><span class="inline-icon">Icono para agregar artículo.<img src="img/Agregararticulo.png" /></span></li>
+        </ul>
+
+        <p>Al agregar un artículo, la aplicación gestiona automáticamente el formato de moneda argentina y valida los campos obligatorios, haciendo la carga de productos rápida y sin errores.</p>
+
+        <img src="img/AgregarArticuloSeccion2.png" />
+        <div class="caption">Agregar un nuevo artículo</div>
+
+        <p>En la barra superior derecha tiene la posibilidad de agregar una imagen por URL:</p>
+        <ul>
+            <li><span class="inline-icon">Agregar imagen:<img src="img/addImagenUrl.png" /></span></li>
+            <li><span class="inline-icon">Quitar imagen:<img src="img/Borrar imagen.png" /></span></li>
+            <li><span class="inline-icon">Subir imagen local:<img src="img/addfILE.png" /></span></li>
+        </ul>
+
+        <img src="img/addImgbotones.png" />
+        <div class="caption">Botones de imagen superior</div>
+
+        <p>Los formatos soportados para URL de imágenes son:</p>
+        <ul>
+            <li>JPEG / JPG</li>
+            <li>PNG</li>
+            <li>GIF</li>
+            <li>BMP</li>
+            <li>TIFF (limitado)</li>
+            <li>ICO</li>
+        </ul>
+        <p>Otros formatos (por ejemplo WEBP, HEIC, AVIF) pueden no abrirse o cargar correctamente.</p>
+
+        <p>Para imágenes locales, los formatos de archivo soportados son:</p>
+        <ul>
+            <li>.jpg</li>
+            <li>.png</li>
+        </ul>
+
+        <h2>Eliminar Artículo</h2>
+        <p>Debe tener en cuenta que la eliminación de un artículo es definitiva y no hay forma de recuperar el registro. Utilícelo con precaución; para su seguridad, el sistema le pedirá confirmar si realmente desea eliminar un registro.</p>
+        <img src="img/DeseaEliminar.png">
+
+        <h2>Footer</h2>
+        <p>En la parte inferior de la sección, encontrarás un mensaje de bienvenida personalizado y la fecha y hora actual del sistema para que siempre sepas en qué momento estás trabajando.</p>
+        <img src="img/footer Articulos.png" />
+        <div class="caption">Mensaje de bienvenida y fecha/hora</div>
+
+        <h2 id="marcas">Gestión de Marcas</h2>
+
+        <p>En la sección de <strong>Marcas</strong>, puede administrar todas las marcas disponibles en la aplicación. La interfaz incluye:</p>
+        <ul>
+            <li>Una barra de <strong>filtro rápido por nombre</strong> para buscar marcas existentes.</li>
+            <li>Una grilla que muestra todas las marcas registradas.</li>
+            <li>Botones para <strong>Agregar</strong>, <strong>Eliminar</strong> o <strong>Modificar</strong> marcas.</li>
+        </ul>
+
+        <p>Al eliminar una marca, se aplica una validación de seguridad: si algún artículo está asociado a la marca, la aplicación no permitirá eliminarla hasta que se eliminen o reasignen todos los artículos relacionados.</p>
+
+        <img src="img/CapturaMarcas.png" alt="Listado de Marcas" />
+        <div class="caption">Listado de Marcas</div>
+
+        <p>Para <strong>agregar una nueva marca</strong>, se utiliza el formulario correspondiente donde puede ingresar el nombre y descripción de la marca:</p>
+
+        <img src="img/AgregarMarca.png" alt="Agregar Marca" />
+        <div class="caption">Agregar Marca</div>
+
+        <hr />
+
+        <h2 id="categorias">Gestión de Categorías</h2>
+
+        <p>La sección de <strong>Categorías</strong> funciona de manera similar a la de Marcas:</p>
+        <ul>
+            <li>Filtro rápido por nombre de categoría.</li>
+            <li>Grilla con todas las categorías disponibles.</li>
+            <li>Botones para <strong>Agregar</strong>, <strong>Eliminar</strong> o <strong>Modificar</strong> categorías.</li>
+        </ul>
+
+        <p>Al eliminar una categoría, también se aplica la validación de seguridad: si algún artículo está asociado a la categoría, no se permitirá eliminarla hasta que se borren o reasignen los artículos relacionados.</p>
+
+        <img src="img/categoria.png" alt="Listado de Categorías" />
+        <div class="caption">Listado de Categorías</div>
+
+        <p>Para <strong>agregar una nueva categoría</strong>, se utiliza el formulario correspondiente:</p>
+
+        <img src="img/AgregarCategoria.png" alt="Agregar Categoría" />
+        <div class="caption">Agregar Categoría</div>
+
+
+
+    </div>
+</body>
+</html>
