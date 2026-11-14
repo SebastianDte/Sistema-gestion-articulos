@@ -17,11 +17,6 @@ La aplicación implementa **arquitectura en capas**, manejo de excepciones y val
 - Ver detalle de un artículo  
 - Persistencia en base de datos existente 
 
----
-
-### Integrantes
-- **Duarte Sebastián Exequiel**  
-- **Mauro Sebastián Arias**  
 =======
 # Sistema de Gestión de Artículos e Inventario
 
@@ -212,7 +207,7 @@ Desarrollado de forma integral y autónoma por:
 
 * **Sebastián Duarte**
   * Portfolio / GitHub: [@SebastianDte](https://github.com/SebastianDte)
-  * Contacto: [sebateunmate@outlook.com](mailto:sebateunmate@outlook.com)
+  * Contacto: [contacto@sebastianduarte.com](mailto:contacto@sebastianduarte.com)
   * Rol: Diseño de Arquitectura, Modelado de Datos y Desarrollo Full Stack (.NET)
 
 ---
